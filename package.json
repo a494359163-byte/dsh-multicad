@@ -1,0 +1,39 @@
+{
+  "name": "dsh-multicad",
+  "version": "0.1.0",
+  "description": "AutoCAD / ZWCAD / GstarCAD / BricsCAD connector for DeepSeek Harness via MCP, with a self-healing Python environment.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "Apache-2.0",
+  "author": "a494359163-byte",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a494359163-byte/dsh-multicad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a494359163-byte/dsh-multicad/issues"
+  },
+  "homepage": "https://github.com/a494359163-byte/dsh-multicad#readme",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "mcp",
+    "autocad",
+    "cad",
+    "zwcad",
+    "gstarcad",
+    "bricscad"
+  ],
+  "files": [
+    "lib",
+    "bin",
+    "python",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

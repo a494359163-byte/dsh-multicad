@@ -1,0 +1,17 @@
+- insert:
+    # 1) 把启动器与 Python 源码铺到固定目录
+    - id: multicad-setup
+      name: dsh-multicad
+    # 2) 用 DSH 自带的 MCP 客户端拉起连接器；全部路径运行时解析，与用户无关
+    - id: multicad
+      name: "@deepseek-ai/dsh-mcp-client"
+      config:
+        serverName: multicad
+        transport: stdio
+        command: "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        args:
+          - "-NoProfile"
+          - "-ExecutionPolicy"
+          - "Bypass"
+          - "-Command"
+          - '& (Join-Path $env:LOCALAPPDATA "dsh-multicad\bin\run.ps1")'

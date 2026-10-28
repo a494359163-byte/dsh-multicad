@@ -1,0 +1,6 @@
+﻿dsh-multicad
+Copyright (c) 2026
+
+This product bundles multiCAD-mcp (https://github.com/AnCode666/multiCAD-mcp),
+licensed under the Apache License 2.0. The bundled sources live under python/
+and retain their original copyright and license.
